@@ -1,4 +1,4 @@
-package com.example.adarshelectronics.api
+package com.Android.weatherApp.api
 
 data class Condition(
     val code: String,
