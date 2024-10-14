@@ -1,4 +1,4 @@
-package com.example.adarshelectronics
+package com.Android.weatherApp
 // Necessary Imports
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
