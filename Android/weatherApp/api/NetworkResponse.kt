@@ -1,4 +1,4 @@
-package com.example.adarshelectronics.api
+package com.Android.weatherApp.api
 
 sealed class NetworkResponse<out T>  {
     data class Success<out T>(val data: T) : NetworkResponse<T>()
