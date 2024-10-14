@@ -1,4 +1,4 @@
-package com.example.adarshelectronics.api
+package com.Android.weatherApp.api
 
 import retrofit2.Response
 import retrofit2.http.GET
