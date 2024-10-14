@@ -1,0 +1,117 @@
+/* Not Necessary but it is good practice for some cases*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* For a static background(Tri-color) */
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(130deg, rgb(220, 220, 91),rgb(218, 86, 86), beige);
+    background-size: cover;
+    text-align: center;
+}
+
+/* For an animated Background */
+/* body {
+    width:100%;
+    height:100vh;
+    background: linear-gradient(130deg,rgb(224, 69, 69), rgb(212, 155, 48), rgb(227, 227, 76), green, rgb(60, 60, 235), indigo, violet,indigo,blue, green,rgb(220, 220, 91),orange,rgb(218, 86, 86), beige); 
+    background-size: 1000% 100%;  
+    animation: create-rainbow-gradient-shift 30s ease infinite;
+    text-align: center;
+  }
+  
+  @keyframes create-rainbow-gradient-shift{
+      0%{background-position:0% 50%}
+      100%{background-position:100% 100%}
+  } */
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calc {
+    height: 70vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5vmin;
+    margin-bottom: 27vmin;
+}
+
+button {
+    height: 13vmin;
+    width: 13vmin;
+    border-radius: 1.2rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 7.5vmin;
+    color: #f66767;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: hsl(208, 8%, 80%);
+}
+
+button:hover {
+    background-color: hsl(210, 7%, 90%);
+}
+
+button:active{
+    background-color: hsl(204, 76%, 100%);
+}
+
+#textplace {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outArea {
+    width: 60vmin;
+    height: 10vmin;
+    resize: none;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    border: none;
+    user-select: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 7.8vmin;
+    font-weight: bold;
+    text-align: center;
+    overflow-x: auto; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+}
+
+h1 {
+    font-size: 6vmin;
+    margin-left: 8vmin;
+    color: rgb(26, 24, 24);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Arial Black";
+    color: rgb(24, 21, 21);
+    text-shadow: 0 0 15px rgb(221, 210, 210);
+}
+
+#clear {
+    margin-left: 15.65vmin;
+}
+
+#clrinput {
+    margin-right: 15.65vmin;
+}
+
+.num {
+    color: rgb(46, 39, 39);
+}

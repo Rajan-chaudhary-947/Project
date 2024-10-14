@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <main>
+        <div id ="container">
+            <div id="calc">
+                <h1> Calculator </h1>
+                <div id="textplace">
+                    <textarea id="outArea" placeholder="0" readonly></textarea>
+                </div>
+                <button class="num" onclick="appendToDisplay('9')">9</button>
+                <button class="num" onclick="appendToDisplay('8')">8</button>
+                <button class="num" onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('+')">&plus;</button>
+                <button class="num" onclick="appendToDisplay('6')">6</button>
+                <button class="num" onclick="appendToDisplay('5')">5</button>
+                <button class="num" onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('-')">&minus;</button>
+                <button class="num" onclick="appendToDisplay('3')">3</button>
+                <button class="num" onclick="appendToDisplay('2')">2</button>
+                <button class="num" onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('*')">&times;</button>
+                <button onclick="appendToDisplay('/')">&divide;</button>
+                <button class="num" onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="Result()">&equals;</button>
+                <button id="clear" onclick="clearDisplay()">C</button>
+                <button id="clrinput" onclick="clearAnInput()">&larr;</button>
+            </div>
+        </div>
+    </main>
+    <script src="calculator.js" ></script>
+</body>
+</html>
